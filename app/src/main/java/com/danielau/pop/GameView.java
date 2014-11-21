@@ -56,15 +56,15 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     private static final String KEY_BESTTIME = "BestTIme";
     // The following are ids for achievements
     private static final String INCREMENTAL_ACHIEVEMENT_PLAY100ROUNDS = "CgkIjcr5lN8fEAIQBw";
-    private static final String INCREMENTAL_ACHIEVEMENT_PLAY1000ROUNDS = "CgkIjcr5lN8fEAIQDg";
+    private static final String INCREMENTAL_ACHIEVEMENT_POP1000BUBBLES = "CgkIjcr5lN8fEAIQDA";
     private static final String ACHIEVEMENT_POP0BUBBLES = "CgkIjcr5lN8fEAIQCQ";
     private static final String ACHIEVEMENT_POP25BUBBLES = "CgkIjcr5lN8fEAIQAw";
     private static final String ACHIEVEMENT_POP100BUBBLES = "CgkIjcr5lN8fEAIQBA";
-    private static final String INCREMENTAL_ACHIEVEMENT_POP300BUBBLES = "CgkIjcr5lN8fEAIQCg";
+    private static final String ACHIEVEMENT_POP150BUBBLES = "CgkIjcr5lN8fEAIQCg";
     private static final String ACHIEVEMENT_1337SCORE = "CgkIjcr5lN8fEAIQBQ";
-    private static final String ACHIEVEMENT_25000SCORE = "CgkIjcr5lN8fEAIQBg";
-    private static final String ACHIEVEMENT_50000SCORE = "CgkIjcr5lN8fEAIQCw";
-    private static final String INCREMENTAL_ACHIEVEMENT_100000SCORE = "CgkIjcr5lN8fEAIQDA";
+    private static final String ACHIEVEMENT_5000SCORE = "CgkIjcr5lN8fEAIQBg";
+    private static final String ACHIEVEMENT_10000SCORE = "CgkIjcr5lN8fEAIQCw";
+    private static final String INCREMENTAL_ACHIEVEMENT_1000000SCORE = "CgkIjcr5lN8fEAIQDg";
     private static final String ACHIEVEMENT_DARKNESS = "CgkIjcr5lN8fEAIQCA";
     private static final String ACHIEVEMENT_VICTORY = "CgkIjcr5lN8fEAIQEA";
     private static final String ACHIEVEMENT_30SECONDS = "CgkIjcr5lN8fEAIQEQ";
@@ -795,7 +795,12 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 
         // Increment once for each round played
         Games.Achievements.increment(mGoogleApiClient, INCREMENTAL_ACHIEVEMENT_PLAY100ROUNDS, 1);
-        Games.Achievements.increment(mGoogleApiClient, INCREMENTAL_ACHIEVEMENT_PLAY1000ROUNDS, 1);
+        // Increment bubbles popped for each round played
+        if (popped >= 10) {
+            int poppedSteps = (int) Math.floor(popped / 10);
+            Games.Achievements.increment(mGoogleApiClient,
+                    INCREMENTAL_ACHIEVEMENT_POP1000BUBBLES, poppedSteps);
+        }
 
         // Deal with game mode twenty one achievements
         if (limitedPopsON && bubble.isCompleted()) {
@@ -838,24 +843,25 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                 Games.Achievements.unlock(mGoogleApiClient, ACHIEVEMENT_POP100BUBBLES);
             }
             // Set steps for the incremental achievement 300 bubbles popped
-            if (popped > 1) {
-                Games.Achievements.setSteps(mGoogleApiClient, INCREMENTAL_ACHIEVEMENT_POP300BUBBLES, popped);
+            if (popped >= 150) {
+                Games.Achievements.unlock(mGoogleApiClient, ACHIEVEMENT_POP150BUBBLES);
             }
 
             // Deal with score achievements
             if (score == 1337) {
                 Games.Achievements.unlock(mGoogleApiClient, ACHIEVEMENT_1337SCORE);
             }
-            if (score > 25000) {
-                Games.Achievements.unlock(mGoogleApiClient, ACHIEVEMENT_25000SCORE);
+            if (score > 5000) {
+                Games.Achievements.unlock(mGoogleApiClient, ACHIEVEMENT_5000SCORE);
             }
-            if (score > 50000) {
-                Games.Achievements.unlock(mGoogleApiClient, ACHIEVEMENT_50000SCORE);
+            if (score > 10000) {
+                Games.Achievements.unlock(mGoogleApiClient, ACHIEVEMENT_10000SCORE);
             }
-            // Set steps for the incremental achievement 100,000 score
+            // Set steps for the incremental achievement 1,000,000 score
             if (score > 1000) {
-                int steps = (int) Math.floor(score / 1000);
-                Games.Achievements.setSteps(mGoogleApiClient, INCREMENTAL_ACHIEVEMENT_100000SCORE, steps);
+                int scoreSteps = (int) Math.floor(score / 1000);
+                Games.Achievements.increment(mGoogleApiClient,
+                        INCREMENTAL_ACHIEVEMENT_1000000SCORE, scoreSteps);
             }
         }
 
