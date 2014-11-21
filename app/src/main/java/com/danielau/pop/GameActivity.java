@@ -24,14 +24,14 @@ public class GameActivity extends Activity {
     // Initialize the tag for Android's logging framework LogCat
     //private static final String TAG = GameActivity.class.getSimpleName();
     // Ad unit id for ADMOB to know who is requesting ads
-    private static final String AD_UNIT_ID = "ca-app-pub-5750653837551984/9381471952";
+    //private static final String AD_UNIT_ID = "ca-app-pub-5750653837551984/9381471952";
     // Define the AdView object for our activity
-    AdView admobView;
+    //AdView admobView;
     // Define the GameView object for our activity
     GameView gameView;
     // Define the Linear Layout for our activity
-    LinearLayout layout;
-    LinearLayout.LayoutParams layoutParameters;
+    /*LinearLayout layout;
+    LinearLayout.LayoutParams layoutParameters;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,20 +47,21 @@ public class GameActivity extends Activity {
         // We set up the activity's content
         gameView = new GameView(this);
 
-        createAdmobView();
+        //createAdmobView();
 
-        createLinearLayout();
+        //createLinearLayout();
 
-        layout.addView(admobView, layoutParameters);
-        layout.addView(gameView, layoutParameters);
+        //layout.addView(admobView, layoutParameters);
+        //layout.addView(gameView, layoutParameters);
 
-        setContentView(layout);
+        //setContentView(layout);
+        setContentView(gameView);
 
-        createAndLoadAdRequest();
+        //createAndLoadAdRequest();
 
     }
 
-    private void createLinearLayout() {
+    /*private void createLinearLayout() {
         layout = new LinearLayout(this);
         layout.setOrientation(LinearLayout.VERTICAL);
         // Set the background of our layout to match the settings
@@ -74,7 +75,7 @@ public class GameActivity extends Activity {
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT);
 
-    }
+    }*/
 
     @Override
     protected void onStop() {
@@ -84,7 +85,7 @@ public class GameActivity extends Activity {
 
     @Override
     protected void onDestroy() {
-        admobView.destroy();
+        //admobView.destroy();
         super.onDestroy();
     }
 
@@ -92,7 +93,7 @@ public class GameActivity extends Activity {
     protected void onPause() {
         // We override the activity's onPause to include our game view's onPause
         super.onPause();
-        admobView.pause();
+        //admobView.pause();
         gameView.onPause();
     }
 
@@ -101,23 +102,23 @@ public class GameActivity extends Activity {
         // We override the activity's onResume to include our game view's
         // onResume
         super.onResume();
-        admobView.resume();
+        //admobView.resume();
         gameView.onResume();
     }
 
-    private void createAdmobView() {
+    /*private void createAdmobView() {
         admobView = new AdView(this);
         admobView.setAdUnitId(AD_UNIT_ID);
         admobView.setAdSize(AdSize.SMART_BANNER);
 
-    }
+    }*/
 
-    private void createAndLoadAdRequest() {
+    /*private void createAndLoadAdRequest() {
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .addTestDevice("04CE99C831F1558D759E784AA1661BBF")
                 .build();
         // Start loading the ad in the background.
         admobView.loadAd(adRequest);
-    }
+    }*/
 }
