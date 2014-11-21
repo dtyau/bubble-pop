@@ -61,8 +61,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/danielau/pop/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4675" vertical-offset="5159" max-vertical-offset="7254">
-              <caret line="307" column="42" selection-start-line="307" selection-start-column="38" selection-end-line="307" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.7825" vertical-offset="5141" max-vertical-offset="7326">
+              <caret line="313" column="39" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,19 +76,20 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6896553" vertical-offset="1574" max-vertical-offset="2412">
-              <caret line="95" column="49" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.32" vertical-offset="0" max-vertical-offset="306">
-              <caret line="6" column="90" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
-              <folding />
+            <state vertical-scroll-proportion="-10.275862" vertical-offset="1898" max-vertical-offset="2430">
+              <caret line="122" column="40" selection-start-line="122" selection-start-column="40" selection-end-line="122" selection-end-column="40" />
+              <folding>
+                <element signature="e#604#624#0" expanded="true" />
+                <element signature="e#1000#1020#0" expanded="true" />
+                <element signature="e#1459#1478#0" expanded="true" />
+                <element signature="e#2066#2086#0" expanded="true" />
+                <element signature="e#2467#2487#0" expanded="true" />
+                <element signature="e#2866#2886#0" expanded="true" />
+                <element signature="e#3275#3295#0" expanded="true" />
+                <element signature="e#3877#3903#0" expanded="true" />
+                <element signature="e#4317#4337#0" expanded="true" />
+                <element signature="e#4763#4783#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2295,16 +2296,27 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6896553" vertical-offset="1574" max-vertical-offset="2412">
-          <caret line="95" column="49" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="49" />
-          <folding />
+        <state vertical-scroll-proportion="-10.275862" vertical-offset="1898" max-vertical-offset="2430">
+          <caret line="122" column="40" selection-start-line="122" selection-start-column="40" selection-end-line="122" selection-end-column="40" />
+          <folding>
+            <element signature="e#604#624#0" expanded="true" />
+            <element signature="e#1000#1020#0" expanded="true" />
+            <element signature="e#1459#1478#0" expanded="true" />
+            <element signature="e#2066#2086#0" expanded="true" />
+            <element signature="e#2467#2487#0" expanded="true" />
+            <element signature="e#2866#2886#0" expanded="true" />
+            <element signature="e#3275#3295#0" expanded="true" />
+            <element signature="e#3877#3903#0" expanded="true" />
+            <element signature="e#4317#4337#0" expanded="true" />
+            <element signature="e#4763#4783#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/danielau/pop/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4675" vertical-offset="5159" max-vertical-offset="7254">
-          <caret line="307" column="42" selection-start-line="307" selection-start-column="38" selection-end-line="307" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.7825" vertical-offset="5141" max-vertical-offset="7326">
+          <caret line="313" column="39" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

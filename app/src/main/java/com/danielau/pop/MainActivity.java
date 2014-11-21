@@ -304,10 +304,14 @@ public class MainActivity extends Activity implements
 
         } else {
 
-            ImageButton button = (ImageButton) findViewById(R.id.button_googlePlay);
-            button.setVisibility(View.GONE);
+            ImageButton button_googleplay = (ImageButton) findViewById(R.id.button_googlePlay);
+            button_googleplay.setVisibility(View.GONE);
             CustomTextView customTextView = (CustomTextView) findViewById(R.id.customtextview_login);
             customTextView.setVisibility(View.GONE);
+            ImageButton button_achievements = (ImageButton) findViewById(R.id.button_achievements);
+            button_achievements.setVisibility(View.VISIBLE);
+            ImageButton button_leaderboards = (ImageButton) findViewById(R.id.button_leaderboard);
+            button_leaderboards.setVisibility(View.VISIBLE);
             setImage(R.id.button_achievements, R.drawable.achievements);
             setImage(R.id.button_leaderboard, R.drawable.leaderboards);
 
