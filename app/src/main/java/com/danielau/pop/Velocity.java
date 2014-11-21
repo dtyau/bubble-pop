@@ -14,7 +14,7 @@ public class Velocity {
 
     // We define the constants for direction and speed
     public static final float RELATIVE_SPEED = 256; //64 // Lower is faster
-    public static final float LIMIT_MODE_BASE_SPEED = (float) 3.5; // Higher is faster
+    public static final float LIMIT_MODE_BASE_SPEED = (float) 3.3; // Higher is faster
     public static final float DIRECTION_LEFT = -1;
     public static final float DIRECTION_RIGHT = 1;
     public static final float DIRECTION_UP = -1;
