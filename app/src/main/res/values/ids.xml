@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_id">1090697192717</string>
+    <string name="achievements_pop25bubbles">CgkIjcr5lN8fEAIQAw</string>
+    <string name="achievements_pop100bubbles">CgkIjcr5lN8fEAIQBA</string>
+    <string name="achievements_1337score">CgkIjcr5lN8fEAIQBQ</string>
+    <string name="achievementsincremental_scoreof25000">CgkIjcr5lN8fEAIQBg</string>
+    <string name="achievementsincremental_play100rounds">CgkIjcr5lN8fEAIQBw</string>
+    <string name="leaderboard_topscores">CgkIjcr5lN8fEAIQAQ</string>
+    
+</resources>

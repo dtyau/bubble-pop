@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <com.danielau.pop.CustomTextView
+        android:id="@+id/customtextview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="280dp"
+        android:layout_alignBottom="@+id/button_play"
+        android:text="@string/bubble_pop"
+        android:textSize="56dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/button_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:contentDescription="@string/bubble_pop"
+        android:onClick="startGame"
+        android:src="@drawable/explosion" />
+
+    <ImageButton
+        android:id="@+id/button_limitedPops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_play"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:contentDescription="@string/twentyone"
+        android:onClick="toggleLimitedPops" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_limitedPops"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@+id/button_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/bubble_pop"
+            android:onClick="toggleVibration" />
+
+        <ImageButton
+            android:id="@+id/button_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@null"
+            android:contentDescription="@string/bubble_pop"
+            android:onClick="toggleAudio" />
+
+        <ImageButton
+            android:id="@+id/button_dayMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@null"
+            android:contentDescription="@string/bubble_pop"
+            android:onClick="toggleDayNightMode" />
+
+        <ImageButton
+            android:id="@+id/button_googlePlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@null"
+            android:contentDescription="@string/bubble_pop"
+            android:onClick="toggleGooglePlay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_googleplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout_options"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/button_achievements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@null"
+            android:contentDescription="@string/bubble_pop"
+            android:onClick="showAchievements" />
+
+        <ImageButton
+            android:id="@+id/button_leaderboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@null"
+            android:contentDescription="@string/bubble_pop"
+            android:onClick="showLeaderboards" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

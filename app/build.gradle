@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'DevDan_keystore'
+            keyPassword 'whatth3fuck1sk3yst0r3'
+            storeFile file('/home/dtyau/AnDev/DevDan_keystore')
+            storePassword 'whatth3fuck1sk3yst0r3'
+        }
+    }
+    compileSdkVersion 19
+    buildToolsVersion "21.1.1"
+    defaultConfig {
+        applicationId "com.danielau.pop"
+        minSdkVersion 14
+        targetSdkVersion 21
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile project(':BaseGameUtils')
+    compile 'com.android.support:support-v4:21.0.+'
+    compile 'com.google.android.gms:play-services:+'
+}

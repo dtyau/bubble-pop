@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">bubble pop!</string>
+    <string name="bubble_pop">bubble pop!</string>
+    <string name="twentyone">twenty-one</string>
+    <string name="signin_failure">Sign-in failed, please check your network network settings.</string>
+    <string name="signin_other_error">Sign-in failed, please try again later.</string>
+
+</resources>
