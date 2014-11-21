@@ -92,6 +92,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp">
 
+        <com.danielau.pop.CustomTextView
+            android:id="@+id/customtextview_login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/googleplay_login"
+            android:textSize="12dp"
+            android:gravity="center" />
+
         <ImageButton
             android:id="@+id/button_achievements"
             android:layout_width="wrap_content"

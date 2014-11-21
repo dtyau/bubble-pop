@@ -225,6 +225,9 @@
     <string name="gamehelper_license_failed">License check failed.</string>
     <string name="gamehelper_sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
     <string name="gamehelper_unknown_error">Unknown error.</string>
+    <!-- From: file:/home/dtyau/AndroidstudioProjects/pop/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="googleplay_login">log into Google Play for achievements and leaderboards!</string>
     <!-- From: file:/home/dtyau/AndroidstudioProjects/pop/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <string name="leaderboard_topscores">CgkIjcr5lN8fEAIQAQ</string>

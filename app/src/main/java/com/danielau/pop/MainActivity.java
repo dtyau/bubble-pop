@@ -109,8 +109,8 @@ public class MainActivity extends Activity implements
     @Override
     protected void onResume() {
         ColourManager.getRandomColour();
-        CustomTextView customtextview_title = (CustomTextView) findViewById(R.id.customtextview_title);
-        customtextview_title.setTextColor(Color.parseColor(ColourManager.getColourHex()));
+        setCustomTextViewColour(R.id.customtextview_title);
+        setCustomTextViewColour(R.id.customtextview_login);
         setDayNightMode();
         setAudioMode();
         setVibrateMode();
@@ -306,6 +306,8 @@ public class MainActivity extends Activity implements
 
             ImageButton button = (ImageButton) findViewById(R.id.button_googlePlay);
             button.setVisibility(View.GONE);
+            CustomTextView customTextView = (CustomTextView) findViewById(R.id.customtextview_login);
+            customTextView.setVisibility(View.GONE);
             setImage(R.id.button_achievements, R.drawable.achievements);
             setImage(R.id.button_leaderboard, R.drawable.leaderboards);
 
@@ -318,6 +320,11 @@ public class MainActivity extends Activity implements
         button.setImageResource(RidDrawable);
     }
 
+    private void setCustomTextViewColour(int RidTextView) {
+        CustomTextView customTextView = (CustomTextView) findViewById(RidTextView);
+        customTextView.setTextColor(Color.parseColor(ColourManager.getColourHex()));
+    }
+
     private void actionsOnPress() {
         playEffects();
         ColourManager.getRandomColour();
@@ -326,8 +333,8 @@ public class MainActivity extends Activity implements
         setVibrateMode();
         setLimitedPopsMode();
         setGooglePlay();
-        CustomTextView title = (CustomTextView) findViewById(R.id.customtextview_title);
-        title.setTextColor(Color.parseColor(ColourManager.getColourHex()));
+        setCustomTextViewColour(R.id.customtextview_title);
+        setCustomTextViewColour(R.id.customtextview_login);
     }
 
     public void toggleDayNightMode(View view) {

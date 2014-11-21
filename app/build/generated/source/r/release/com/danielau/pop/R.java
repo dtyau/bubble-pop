@@ -1187,11 +1187,11 @@ containing a value of this type.
         public static final int always=0x7f090016;
         public static final int beginning=0x7f09000f;
         public static final int book_now=0x7f090026;
-        public static final int button_achievements=0x7f090057;
+        public static final int button_achievements=0x7f090058;
         public static final int button_audio=0x7f090053;
         public static final int button_dayMode=0x7f090054;
         public static final int button_googlePlay=0x7f090055;
-        public static final int button_leaderboard=0x7f090058;
+        public static final int button_leaderboard=0x7f090059;
         public static final int button_limitedPops=0x7f090050;
         public static final int button_play=0x7f09004f;
         public static final int button_vibrate=0x7f090052;
@@ -1201,6 +1201,7 @@ containing a value of this type.
         public static final int checkbox=0x7f09003f;
         public static final int classic=0x7f090029;
         public static final int collapseActionView=0x7f090017;
+        public static final int customtextview_login=0x7f090057;
         public static final int customtextview_title=0x7f09004e;
         public static final int default_activity_button=0x7f09003a;
         public static final int dialog=0x7f09001b;
@@ -1356,13 +1357,14 @@ containing a value of this type.
         public static final int gamehelper_license_failed=0x7f0b0036;
         public static final int gamehelper_sign_in_failed=0x7f0b0037;
         public static final int gamehelper_unknown_error=0x7f0b0038;
-        public static final int leaderboard_topscores=0x7f0b0039;
-        public static final int signin_failure=0x7f0b003a;
-        public static final int signin_other_error=0x7f0b003b;
-        public static final int store_picture_message=0x7f0b003c;
-        public static final int store_picture_title=0x7f0b003d;
-        public static final int twentyone=0x7f0b003e;
-        public static final int wallet_buy_button_place_holder=0x7f0b003f;
+        public static final int googleplay_login=0x7f0b0039;
+        public static final int leaderboard_topscores=0x7f0b003a;
+        public static final int signin_failure=0x7f0b003b;
+        public static final int signin_other_error=0x7f0b003c;
+        public static final int store_picture_message=0x7f0b003d;
+        public static final int store_picture_title=0x7f0b003e;
+        public static final int twentyone=0x7f0b003f;
+        public static final int wallet_buy_button_place_holder=0x7f0b0040;
     }
     public static final class style {
         /** 
